@@ -13,8 +13,6 @@ public interface Tela {
     /**
      * Lê a pagina atual até o usuario executar alguma ação
      */
-    public void ler(){
-     System.out.println("Lendo E-book ");
-    }
+    public abstract void ler();
     
 }

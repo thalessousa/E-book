@@ -9,7 +9,8 @@ package Biblioteca;
  * @author Thales Sousa
  */
 public class Autor {
-    private static class string nome(string[]){
+    public static void nome()
+    {
     
     }
 }

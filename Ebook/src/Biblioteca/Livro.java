@@ -11,7 +11,7 @@ package Biblioteca;
  */
 public abstract class Livro {
     private int numerodepaginas;
-    private string nomedolivro;
+    private String nomedolivro;
     public abstract void numerodepaginas();
     
 }
