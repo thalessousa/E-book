@@ -61,7 +61,7 @@ public class Ebook extends Livro {
                 System.out.println("Autor valido \n"); 
         }
         System.out.println("Insira o nome do livro \n");
-        this.nomedolivro = input.next();
+        this.nomedolivro = input.nextLine();
         if(this.nomedolivro.contains("^[a-Z]")){
                 System.out.println("Nome de livro valido \n");
         }
