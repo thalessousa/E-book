@@ -13,6 +13,5 @@ public interface Tela {
     /**
      * Lê a pagina atual até o usuario executar alguma ação
      */
-    public abstract void ler();
-    
+    public abstract void ler(); 
 }
