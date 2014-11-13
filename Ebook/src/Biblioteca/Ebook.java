@@ -14,7 +14,6 @@ public class Ebook extends Livro {
     private int numerodepaginas,isbn,paginamarcada;
     private static String ano;
     private String autor,nomedolivro;
-    private final int paginainicial= super.paginainicial;
     Scanner input = new Scanner(System.in);
     
     /*Construtor default*/
@@ -67,7 +66,7 @@ public class Ebook extends Livro {
         }
         System.out.println("Insira o ano de publicacao do livro(Formato Dia Mes Ano) \n");
         Ebook.ano = input.next();
-                if(this.ano.contains("^[1,2,3,4,5,6,7,8,9,0]")){
+                if(Ebook.ano.contains("^[1,2,3,4,5,6,7,8,9,0]")){
                 System.out.println("Data valida \n");
                 }
     }   

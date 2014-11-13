@@ -21,8 +21,8 @@ public class Main {
     Ebook Livronovo = new Ebook();
     Kindle Kindle = new Kindle();
     Editora JBC = new Editora();
+    do{
     Kindle.menu(opcao);
-    while(opcao!=0)
     switch(opcao){
         case 1:  
            Livronovo.setAtributos();
@@ -46,6 +46,6 @@ public class Main {
             JBC.impressaoeditora();
             ;
     }
+    }while(opcao!=0);
     }
-    
 }

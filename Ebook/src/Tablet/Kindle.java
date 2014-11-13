@@ -2,11 +2,7 @@ package Tablet;
 
 import java.util.Scanner;
 import Main.Main;
-import Tablet.Reader;
-import Biblioteca.Ebook;
-import Biblioteca.Editora;
 import Biblioteca.Livro;
-
 /*
  * Classe Kindle que herda as funções de Reader com @Override
  * 
@@ -21,14 +17,15 @@ public class Kindle extends Reader {
     public void pagina(){
       this.paginaatual = paginaatual;
     }
-        
     @Override
     public void ler() {
         super.ler();
+        System.out.println("Lendo o livro \n");
     }
     @Override
     public void marcarpagina() {
         this.pagina();
+        System.out.println("Pagina "+this.paginaatual+"marcada \n");
     }
     @Override
     public void paginaseguinte() {
@@ -45,6 +42,7 @@ public class Kindle extends Reader {
         System.out.println("4 - Passa para  a proxima pagina \n ");
         System.out.println("5 - Volta para a pagina anterior \n ");
         System.out.println("6 - Marca a pagina atual"); 
+        System.out.println("7 - Imprimir list de livros da editora \n");
         Main.opcao = input.nextInt();
     }
 }

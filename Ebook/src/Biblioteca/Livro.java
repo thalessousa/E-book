@@ -10,10 +10,10 @@ package Biblioteca;
  * @author Thales Sousa
  */
 public abstract class Livro {
-    
-    private int isbn;
-    private static String ano;
-    private String autor,nomedolivro;
+
+    protected int isbn;
+    protected static String ano;
+    protected String autor,nomedolivro;
     protected static final int paginainicial= 1;
     
     public Livro() {
