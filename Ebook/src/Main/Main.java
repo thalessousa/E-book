@@ -44,7 +44,10 @@ public class Main {
             break;
         case 7:
             JBC.impressaoeditora();
-            ;
+            break;
+        case 8:
+            Kindle.versao();
+            break;
     }
     }while(opcao!=0);
     }

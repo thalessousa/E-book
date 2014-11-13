@@ -12,8 +12,14 @@ import Biblioteca.Livro;
  * @author Thales Sousa
  */
 public class Kindle extends Reader {
-      int paginaatual;
-      static  Scanner input = new Scanner(System.in);
+    public enum atualizacoes {Gingerbread,Honeycomb,Froyo,Cupcake};  
+    public atualizacoes versao;
+    public int paginaatual;
+    static  Scanner input = new Scanner(System.in);
+    
+    public void versao(){
+        System.out.println("Versao atual do kindle e "+atualizacoes.Gingerbread);
+    }
     public void pagina(){
       this.paginaatual = paginaatual;
     }
@@ -43,6 +49,7 @@ public class Kindle extends Reader {
         System.out.println("5 - Volta para a pagina anterior \n ");
         System.out.println("6 - Marca a pagina atual"); 
         System.out.println("7 - Imprimir list de livros da editora \n");
+        System.out.println("8 - Versao do sistema \n");
         Main.opcao = input.nextInt();
     }
 }

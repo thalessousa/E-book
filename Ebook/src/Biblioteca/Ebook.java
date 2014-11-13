@@ -11,10 +11,11 @@ import java.util.Scanner;
  */
 public class Ebook extends Livro {
     
-    private int numerodepaginas,isbn,paginamarcada;
+    private int numerodepaginas,isbn;
+    private static int paginamarcada;
     private static String ano;
     private String autor,nomedolivro;
-    Scanner input = new Scanner(System.in);
+    static Scanner input = new Scanner(System.in);
     
     /*Construtor default*/
     public Ebook() {
@@ -70,9 +71,9 @@ public class Ebook extends Livro {
                 System.out.println("Data valida \n");
                 }
     }   
-     public void marcarpagina(){
+     public static void marcarpagina(){
          System.out.println("Insira a pagina atual de leitura \n");
-         this.paginamarcada = input.nextInt();
+         Ebook.paginamarcada = input.nextInt();
      }
      @Override
      public void imprimirdados(){
