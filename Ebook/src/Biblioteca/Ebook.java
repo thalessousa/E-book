@@ -46,24 +46,32 @@ public class Ebook extends Livro {
         System.out.println("Insira o numero de paginas do livro");
         this.numerodepaginas = input.nextInt();
         while(this.numerodepaginas <0){
-            System.out.println("Numero de paginas invalido,insira novamente ");
+            System.out.println("Numero de paginas invalido,insira novamente \n");
             this.numerodepaginas = input.nextInt();
         }
-        System.out.println("Insira o isbn");
+        System.out.println("Insira o isbn \n");
         while(this.isbn <0){
-            System.out.println("Numero ISBN invalido,insira novamente ");
+            System.out.println("Numero ISBN invalido,insira novamente \n");
             this.isbn = input.nextInt();
         }
-        this.isbn = input.nextInt();
         System.out.println("Insira o autor do livro");
-        this.autor = input.nextLine();
-        System.out.println("Insira o nome do livro");
+        this.autor = input.nextLine(); 
+        if(this.autor.contains("^[a-Z]")){
+                System.out.println("Autor valido \n"); 
+        }
+        System.out.println("Insira o nome do livro \n");
         this.nomedolivro = input.nextLine();
-        System.out.println("Insira o ano de publicacao do livro(Formato Dia Mes Ano");
+        if(this.nomedolivro.contains("^[a-Z]")){
+                System.out.println("Nome de livro valido \n");
+        }
+        System.out.println("Insira o ano de publicacao do livro(Formato Dia Mes Ano) \n");
         Ebook.ano = input.nextLine();
+                if(this.ano.contains("^[1,2,3,4,5,6,7,8,9,0]")){
+                System.out.println("Data valida \n");
+                }
     }   
      public void marcarpagina(){
-         System.out.println("Insira a pagina atual de leitura");
+         System.out.println("Insira a pagina atual de leitura \n");
          this.paginamarcada = input.nextInt();
      }
      @Override
