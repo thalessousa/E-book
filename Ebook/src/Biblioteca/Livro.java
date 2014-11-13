@@ -12,6 +12,7 @@ package Biblioteca;
 public abstract class Livro {
     private int numerodepaginas;
     private String nomedolivro;
+    private int isbn;
     public abstract void numerodepaginas();
     
 }

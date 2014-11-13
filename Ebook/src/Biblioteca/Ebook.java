@@ -7,7 +7,7 @@ package Biblioteca;
 
 /**
  *
- * @author LAB4-PC09
+ * @author Thales Sousa
  */
 public class Ebook extends Livro {
     
