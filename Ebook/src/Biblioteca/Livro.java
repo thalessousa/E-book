@@ -42,6 +42,6 @@ public abstract class Livro {
         this.nomedolivro = nomedolivro;
     }   
     public void imprimirdados(){
-        //System.out.println("Isbn %d \n Autor do Livro %s \n Nome do Livro %s ",this.isbn,this.autor,this.nomedolivro);
+        System.out.println("Isbn "+this.isbn+" \n Autor do Livro "+this.autor+" \n Nome do Livro \n"+this.nomedolivro+ " Data de publicacao \n "+Livro.ano);
     }
 }

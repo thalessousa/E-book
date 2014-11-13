@@ -45,27 +45,28 @@ public class Ebook extends Livro {
     public void setAtributos() {
         System.out.println("Insira o numero de paginas do livro");
         this.numerodepaginas = input.nextInt();
-        while(this.numerodepaginas <0){
+        if(this.numerodepaginas <0){
             System.out.println("Numero de paginas invalido,insira novamente \n");
             this.numerodepaginas = input.nextInt();
         }
         System.out.println("Insira o isbn \n");
-        while(this.isbn <0){
+        this.isbn = input.nextInt();
+        if(this.isbn <0){
             System.out.println("Numero ISBN invalido,insira novamente \n");
             this.isbn = input.nextInt();
         }
         System.out.println("Insira o autor do livro");
-        this.autor = input.nextLine(); 
+        this.autor = input.next(); 
         if(this.autor.contains("^[a-Z]")){
                 System.out.println("Autor valido \n"); 
         }
         System.out.println("Insira o nome do livro \n");
-        this.nomedolivro = input.nextLine();
+        this.nomedolivro = input.next();
         if(this.nomedolivro.contains("^[a-Z]")){
                 System.out.println("Nome de livro valido \n");
         }
         System.out.println("Insira o ano de publicacao do livro(Formato Dia Mes Ano) \n");
-        Ebook.ano = input.nextLine();
+        Ebook.ano = input.next();
                 if(this.ano.contains("^[1,2,3,4,5,6,7,8,9,0]")){
                 System.out.println("Data valida \n");
                 }
@@ -76,6 +77,6 @@ public class Ebook extends Livro {
      }
      @Override
      public void imprimirdados(){
-       // System.out.println("Isbn %d \n Autor do Livro %s \n Nome do Livro %s ",this.isbn,this.autor,this.nomedolivro);
+        System.out.println("Isbn "+this.isbn+" \n Autor do Livro "+this.autor+" \n Nome do Livro \n"+this.nomedolivro+ " Data de publicacao \n "+Ebook.ano);
     }
 }

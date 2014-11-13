@@ -5,6 +5,7 @@
 package Main;
 
 import Biblioteca.Ebook;
+import Biblioteca.Editora;
 import Biblioteca.Livro;
 import Tablet.Kindle;
 import Tablet.Reader;
@@ -19,6 +20,7 @@ public class Main {
     System.out.println("Bem vindo");
     Ebook Livronovo = new Ebook();
     Kindle Kindle = new Kindle();
+    Editora JBC = new Editora();
     Kindle.menu(opcao);
     while(opcao!=0)
     switch(opcao){
@@ -39,6 +41,10 @@ public class Main {
            break;
         case 6:
            Kindle.marcarpagina();
+            break;
+        case 7:
+            JBC.impressaoeditora();
+            ;
     }
     }
     
